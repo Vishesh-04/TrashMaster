@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- lower links must connect for schedule page -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Trash Master</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- FOR NAV BAR -->
+    <link rel="stylesheet" href="nav.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- ***********************************  nav bar starts here  *************************************-->
+
+    <nav class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+      
+          <!-- for logo -->
+          <div class="nav-title">
+            TRASH MASTER
+          </div>
+      
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="http://127.0.0.1:8000/pickup_schedule/" target="_blank">Schedule a pickup</a></li>
+          <li><a href="manage.html">Awareness</a></li>
+          <li><a href="about.html" target="_blank">About Us</a></li>
+          <li><a href="Community.html">Community</a></li>
+          <li><a href="#">Redeem Points</a></li>
+          <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover: #3ab34a rounded text-base mt-0 md:mt-0 button1">Register Now
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </ul>
+      </nav>
+
+    <!-- ***********************************  nav bar ends here  *************************************-->
+
+
+    <!--------------------------------------------- SCHEDULE A PICKUP CODE STARTS ----------------------------------------->
+
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-2 py-3 md:flex-row flex-col items-center">
+
+            <!--------------------------  form starts here ----------------->
+            <form class="row g-3 my-10 mx-10">
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4">
+                        <label for="validationCustom01" class="field-label" for="email" >First name</label>
+                        <input type="text" class="form-control" id="email" placeholder="First Name" required name="First Name"  type="text">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom02" class="field-label" for="email">Last name</label>
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="Last Name" required name="Last Name"  type="text">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="field-label" for="email">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" type="text" name="Email" id="email">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="telephone" class="field-label">Phone Number</label>
+                        <input type="tel" maxlength="10" class="form-control" id="telephone" name="Phone Number" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="field-label">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" type="text" name="Address">
+                    </div>
+
+                    <div class="col-md-5">
+                        <label for="inputCity" class="field-label">City</label>
+                        <input type="text" class="form-control" id="inputCity" type="text" name="City">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputState" class="field-label">State</label>
+                        <input type="text" class="form-control" id="inputState" type="text" name="State">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="inputZip" class="field-label">Zip Code</label>
+                        <input type="text" class="form-control" id="inputZip" type="tel" name="Zip Code">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="timeSelect" class="field-label">Select Time</label>
+                        <select class="form-select" id="timeSelect" name="Select Time">
+                            <option Selected></option>
+                            <option value="07:00 AM - 09:00 AM">07:00 AM - 09:00 AM</option>
+                            <option value="02:00 PM - 04:00 PM">02:00 PM - 04:00 PM</option>
+                            <option value="07:00 PM - 09:00 PM">07:00 PM - 09:00 PM</option>
+
+                        </select>
+                    </div>
+
+                    <!-----------select date div start ---------->
+                    <div class="col-md-6" style="padding: 6px;">
+                        <label for="datepicker" class="form-label">Select a Date</label>
+
+                        <div>
+                            <input type="date" id="myDate">
+                            <script>
+                                $(document).ready(function () {
+                                    $("#myDate").datepicker();
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <!----------- select date div ends ----------->
+
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Is your waste segregated?
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <button type="button" class="btn btn-outline-primary">Schedule</button>
+                    </div>
+                </form>
+                <!-- form ends here -->
+
+
+                <!-- image section starts -->
+                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                    <img class="object-cover object-center rounded max-w-full h-auto" alt="hero"
+                        src="https://bit.ly/3PfHe6w" style="width: 700px; height: 355px;">
+                </div>
+                <!-- image section ends -->
+        </div>
+    </section>
+
+
+    <!-- curved div at bottom starts -->
+    <div class="curve shape" style="width: 100%;
+    height: 190px;
+    background-color: #4CAF50;
+    position: fixed;
+    bottom: 0;
+    border-radius: 30% 700% 0 0;
+    z-index: -1;">
+    </div>
+    <!-- curved div at bottom starts -->
+
+    <!--------------------------------------------- SCHEDULE A PICKUP ENDS ----------------------------------------->
+
+
+</body>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwJ4g5hXOZ2ThjOBYUkIVlZP0APZVK0868xkCpEuHe_reZ1Mu32gzU9qsGOnDGT0wt5fQ/exec'
+    const form = document.querySelector('#form')
+    const btn = document.querySelector('#submit')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+  
+      const responseBody = new FormData(form)
+      const TrendBody = responseBody.getAll("TRENDS").join(" ")
+      responseBody.set('TRENDS', TrendBody)
+      fetch(scriptURL, { method: 'POST', body: responseBody })
+        .then(response => { alert('Success!', response) })
+        .catch(error => alert('Error!', error.message))
+    })
+  </script>
+</html>
