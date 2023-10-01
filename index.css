@@ -212,5 +212,10 @@ a {
 @media(max-width:608px){
     h1.local_home_title{
         font-size: 40px;
+        
+    }
+
+    .local_home_leftSide{
+        margin-left: -20px;
     }
 }
