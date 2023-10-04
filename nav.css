@@ -98,10 +98,6 @@ body {
     padding-left: 2rem;
     border: 1px solid #3ab34a;
   }
-  .nav > .nav-list > li:hover{
-    background-color: #3ab34a;
-    border:1px solid black;
-  }
   .nav > #nav-check:checked ~ .nav-list {
     height: calc(100vh - 35px);
   }
