@@ -55,6 +55,8 @@ body {
 }
 @media (max-width: 997px) {
   .nav {
+    position: fixed;
+    top: 0;
     padding: 1rem;
   }
   .nav > .nav-btn {
