@@ -55,7 +55,7 @@ body {
 }
 @media (max-width: 997px) {
   .nav {
-    position: fixed;
+    position: sticky;
     top: 0;
     padding: 1rem;
   }
