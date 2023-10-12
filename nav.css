@@ -8,7 +8,7 @@ body {
   font-family: "Segoe UI";
 }
 .nav {
-  /* position: relative; */
+  position: fixed;
   width: 100%;
   background-color: white;
   display: flex;
@@ -16,10 +16,8 @@ body {
   justify-content: center;
   z-index: 1000;
   height: 50px;
-  position: fixed;
   top: 0;
   border: 1px solid #3ab34a;
-  /* margin: 5px; */
 }
 .nav > .nav-header {
   flex: 0.95;
@@ -28,34 +26,31 @@ body {
 .nav > .nav-header > .nav-title {
   font-size: 22px;
   color: black;
-  margin-top: -5px;
 }
 .nav > .nav-list {
   margin-top: 10px;
   display: flex;
   gap: 2rem;
 }
-.nav > .nav-list > li {
-  margin-top: 5px;
-  list-style-type: none;
-}
-.nav > .nav-list > li a {
-  
+
+.nav > .nav-list > a {
   text-decoration: none;
   color: black;
   cursor: pointer;
   transition: 200ms ease-in-out;
+  margin-top: 5px;
+  list-style-type: none;
 }
-.nav > .nav-list > li a:hover{
+.nav > .nav-list > a:hover {
   text-decoration: underline;
   color: #3ab34a;
-} 
+}
 .nav > #nav-check {
   display: none;
 }
 @media (max-width: 997px) {
   .nav {
-    position: sticky;
+    position: fixed;
     top: 0;
     padding: 1rem;
   }
@@ -92,7 +87,7 @@ body {
     left: 0;
     overflow: hidden;
   }
-  .nav > .nav-list > li {
+  .nav > .nav-list > a {
     height: 35px;
     width: 300px;
     font-size: 20px;
@@ -105,11 +100,11 @@ body {
   }
 }
 
-.button1{
+.button1 {
   margin-bottom: 15px;
-  margin-left:-5px ;
+  margin-left: -5px;
 }
 
-.button1:hover{
+.button1:hover {
   background-color: #3ab34a;
 }
