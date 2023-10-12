@@ -8,7 +8,7 @@ body {
   font-family: "Segoe UI";
 }
 .nav {
-  position: fixed;
+  position: sticky;
   width: 100%;
   background-color: white;
   display: flex;
