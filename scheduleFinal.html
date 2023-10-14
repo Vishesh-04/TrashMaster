@@ -28,29 +28,29 @@
     <nav class="nav">
         <input type="checkbox" id="nav-check">
         <div class="nav-header">
-      
-          <!-- for logo -->
-          <div class="nav-title">
-            TRASH MASTER
-          </div>
-      
+
+            <!-- for logo -->
+            <div class="nav-title">
+                TRASH MASTER
+            </div>
+
         </div>
         <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
         </div>
-        
+
         <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="http://127.0.0.1:8000/pickup_schedule/" target="_blank">Schedule a pickup</a></li>
-          <li><a href="manage.html">Awareness</a></li>
-          <li><a href="about.html" target="_blank">About Us</a></li>
-          <li><a href="Community.html">Community</a></li>
+            <a href="index.html">Home</a>
+            <a href="http://127.0.0.1:8000/pickup_schedule/" target="_blank">Schedule a pickup</a>
+            <a href="manage.html">Awareness</a>
+            <a href="about.html" target="_blank">About Us</a>
+            <a href="Community.html">Community</a>
         </ul>
-      </nav>
+    </nav>
 
     <!-- ***********************************  nav bar ends here  *************************************-->
 
@@ -64,15 +64,17 @@
             <form class="row g-3 my-10 mx-10">
                 <form class="row g-3 needs-validation" novalidate>
                     <div class="col-md-4">
-                        <label for="validationCustom01" class="field-label" for="email" >First name</label>
-                        <input type="text" class="form-control" id="email" placeholder="First Name" required name="First Name"  type="text">
+                        <label for="validationCustom01" class="field-label" for="email">First name</label>
+                        <input type="text" class="form-control" id="email" placeholder="First Name" required
+                            name="First Name" type="text">
                         <div class="valid-feedback">
                             Looks good!
                         </div>
                     </div>
                     <div class="col-md-4">
                         <label for="validationCustom02" class="field-label" for="email">Last name</label>
-                        <input type="text" class="form-control" id="validationCustom02" placeholder="Last Name" required name="Last Name"  type="text">
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="Last Name" required
+                            name="Last Name" type="text">
                         <div class="valid-feedback">
                             Looks good!
                         </div>
@@ -83,7 +85,8 @@
                     </div>
                     <div class="col-md-6">
                         <label for="telephone" class="field-label">Phone Number</label>
-                        <input type="tel" maxlength="10" class="form-control" id="telephone" name="Phone Number" required>
+                        <input type="tel" maxlength="10" class="form-control" id="telephone" name="Phone Number"
+                            required>
                     </div>
                     <div class="col-12">
                         <label for="inputAddress" class="field-label">Address</label>
@@ -175,16 +178,17 @@
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwJ4g5hXOZ2ThjOBYUkIVlZP0APZVK0868xkCpEuHe_reZ1Mu32gzU9qsGOnDGT0wt5fQ/exec'
     const form = document.querySelector('#form')
     const btn = document.querySelector('#submit')
-  
+
     form.addEventListener('submit', e => {
-      e.preventDefault()
-  
-      const responseBody = new FormData(form)
-      const TrendBody = responseBody.getAll("TRENDS").join(" ")
-      responseBody.set('TRENDS', TrendBody)
-      fetch(scriptURL, { method: 'POST', body: responseBody })
-        .then(response => { alert('Success!', response) })
-        .catch(error => alert('Error!', error.message))
+        e.preventDefault()
+
+        const responseBody = new FormData(form)
+        const TrendBody = responseBody.getAll("TRENDS").join(" ")
+        responseBody.set('TRENDS', TrendBody)
+        fetch(scriptURL, { method: 'POST', body: responseBody })
+            .then(response => { alert('Success!', response) })
+            .catch(error => alert('Error!', error.message))
     })
-  </script>
+</script>
+
 </html>
