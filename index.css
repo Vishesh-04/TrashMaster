@@ -1,4 +1,5 @@
 .container {
+    position: relative;
     padding-left: 7px !important;
     padding-right: 7px !important;
     margin-right: auto;
@@ -6,6 +7,7 @@
     width: 100%;
 }
 .row {
+    position: relative;
     display: flex;
     margin-right: -15px;
     margin-left: -15px;
@@ -200,6 +202,7 @@ a {
 
 @media(max-width:1280px){
     .row{
+        position: relative;
         display: flex;
         flex-direction: column;
     }
@@ -216,6 +219,9 @@ a {
     }
 
     .local_home_leftSide{
+        position: relative;
+        /* top: 300px; */
+        padding-top: 10px;
         margin-left: -20px;
     }
 }
