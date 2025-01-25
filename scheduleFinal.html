@@ -176,20 +176,6 @@
 
 </body>
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwJ4g5hXOZ2ThjOBYUkIVlZP0APZVK0868xkCpEuHe_reZ1Mu32gzU9qsGOnDGT0wt5fQ/exec'
-    const form = document.querySelector('#form')
-    const btn = document.querySelector('#submit')
 
-    form.addEventListener('submit', e => {
-        e.preventDefault()
-
-        const responseBody = new FormData(form)
-        const TrendBody = responseBody.getAll("TRENDS").join(" ")
-        responseBody.set('TRENDS', TrendBody)
-        fetch(scriptURL, { method: 'POST', body: responseBody })
-            .then(response => { alert('Success!', response) })
-            .catch(error => alert('Error!', error.message))
-    })
-</script>
 
 </html>
