@@ -28,8 +28,8 @@ To get started with TrashMaster, follow these steps:
 - HTML
 - CSS
 - Javascript
-- PHP
-- SQL Lite
+- Spring Boot
+- Postgre SQL
 
 ## Contributing
 If you would like to contribute to TrashMaster, please follow our contribution guidelines. We welcome contributions from the community!
