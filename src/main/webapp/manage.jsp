@@ -1,3 +1,4 @@
+<%@page language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,17 +43,17 @@
     </div>
 
     <ul class="nav-list">
-      <a href="index.html">Home</a>
-      <a href="http://127.0.0.1:8000/pickup_schedule/" target="_blank">Schedule a pickup</a>
-      <a href="manage.html">Awareness</a>
-      <a href="about.html" target="_blank">About Us</a>
-      <a href="Community.html">Community</a>
+      <a href="index.jsp">Home</a>
+      <a href="scheduleFinal.jsp" target="_blank">Schedule a pickup</a>
+      <a href="manage.jsp">Awareness</a>
+      <a href="about.jsp" target="_blank">About Us</a>
+      <a href="Community.jsp">Community</a>
     </ul>
   </nav>
   <nav aria-label="breadcrumb"
     style="position: absolute; top: 100px; left: 15px; text-decoration: underline; color: #3ab34a;">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item "><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item "><a href="index.jsp">Home</a></li>
       <li class="breadcrumb-item active" aria-current="page">About</li>
     </ol>
   </nav>

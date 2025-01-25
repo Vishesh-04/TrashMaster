@@ -1,3 +1,4 @@
+<%@page language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,11 +44,11 @@
       </div>
 
       <ul class="nav-list">
-        <a href="index.html">Home</a>
-        <a href="scheduleFinal.html" target="_blank">Schedule a pickup</a>
-        <a href="manage.html" target="_blank">Awareness</a>
-        <a href="about.html" target="_blank">About Us</a>
-        <a href="Community.html" target="_blank">Community</a>
+        <a href="index.jsp">Home</a>
+        <a href="scheduleFinal.jsp" target="_blank">Schedule a pickup</a>
+        <a href="manage.jsp" target="_blank">Awareness</a>
+        <a href="about.jsp" target="_blank">About Us</a>
+        <a href="Community.jsp" target="_blank">Community</a>
       </ul>
     </nav>
 

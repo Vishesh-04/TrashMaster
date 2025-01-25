@@ -1,3 +1,4 @@
+<%@page language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,7 +45,7 @@
         <a href="index.html">Home</a>
         <a href="scheduleFinal.html" target="_blank">Schedule a pickup</a>
         <a href="manage.html">Awareness</a>
-        <a href="about.html" target="_blank">About Us</a>
+        <a href="about.jsp" target="_blank">About Us</a>
         <a href="Community.html">Community</a>
       </ul>
     </nav>

@@ -1,3 +1,4 @@
+<%@page language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,11 +46,11 @@
         </div>
 
         <ul class="nav-list">
-            <a href="index.html">Home</a>
-            <a href="http://127.0.0.1:8000/pickup_schedule/" target="_blank">Schedule a pickup</a>
-            <a href="manage.html">Awareness</a>
-            <a href="about.html" target="_blank">About Us</a>
-            <a href="Community.html">Community</a>
+            <a href="index.jsp">Home</a>
+            <a href="schedule" target="_blank">Schedule a pickup</a>
+            <a href="manage.jsp">Awareness</a>
+            <a href="about.jsp" target="_blank">About Us</a>
+            <a href="Community.jsp">Community</a>
         </ul>
     </nav>
 
@@ -59,58 +60,55 @@
     <!--------------------------------------------- SCHEDULE A PICKUP CODE STARTS ----------------------------------------->
 
     <section class="text-gray-600 body-font">
-        <div class="container mx-auto flex px-2 py-3 md:flex-row flex-col items-center">
+        <div class="container mx-auto flex px-2 py-6 md:flex-row flex-col items-center">
 
             <!--------------------------  form starts here ----------------->
-            <form class="row g-3 my-10 mx-10">
-                <form class="row g-3 needs-validation" novalidate>
-                    <div class="col-md-4">
-                        <label for="validationCustom01" class="field-label" for="email">First name</label>
-                        <input type="text" class="form-control" id="email" placeholder="First Name" required
-                            name="First Name" type="text">
+            <form class="row g-3 my-10 mx-10" action="add" method="post" modelAttribute="SchedulePost">
+                <form:form class="row g-3 " action="add" method="post" modelAttribute="SchedulePost">
+<div class="col-md-4">
+                        <label for="validationCustom01" class="field-label" for="fname"  >First name</label>
+                        <input type="text" class="form-control" id="fname" placeholder="First Name" name="fname" required>
                         <div class="valid-feedback">
                             Looks good!
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <label for="validationCustom02" class="field-label" for="email">Last name</label>
-                        <input type="text" class="form-control" id="validationCustom02" placeholder="Last Name" required
-                            name="Last Name" type="text">
+                        <label for="validationCustom02" class="field-label" for="lname" >Last name</label>
+                        <input type="text" class="form-control" id="lname" placeholder="Last Name"  name="lname" required>
                         <div class="valid-feedback">
                             Looks good!
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <label for="inputEmail4" class="field-label" for="email">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4" type="text" name="Email" id="email">
+                        <label for="inputEmail4" class="field-label" for="email" >Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" id="email" name="email" required>
                     </div>
                     <div class="col-md-6">
-                        <label for="telephone" class="field-label">Phone Number</label>
-                        <input type="tel" maxlength="10" class="form-control" id="telephone" name="Phone Number"
-                            required>
+                        <label for="pno" class="field-label" >Phone Number</label>
+                        <input type="tel" maxlength="10" class="form-control" id="pno" name="pno" required>
                     </div>
                     <div class="col-12">
-                        <label for="inputAddress" class="field-label">Address</label>
-                        <input type="text" class="form-control" id="inputAddress" type="text" name="Address">
+                        <label for="add" class="field-label" >Address</label>
+                        <input type="text" class="form-control" id="add" type="text" name="add" required>
                     </div>
 
                     <div class="col-md-5">
-                        <label for="inputCity" class="field-label">City</label>
-                        <input type="text" class="form-control" id="inputCity" type="text" name="City">
+                        <label for="city" class="field-label" >City</label>
+                        <input type="text" class="form-control" id="city" type="text" name="city" required>
                     </div>
                     <div class="col-md-4">
-                        <label for="inputState" class="field-label">State</label>
-                        <input type="text" class="form-control" id="inputState" type="text" name="State">
+                        <label for="state" class="field-label" name="state">State</label>
+                        <input type="text" class="form-control" id="state" type="text" name="state" required>
                     </div>
 
                     <div class="col-md-3">
-                        <label for="inputZip" class="field-label">Zip Code</label>
-                        <input type="text" class="form-control" id="inputZip" type="tel" name="Zip Code">
+                        <label for="zip" class="field-label" >Zip Code</label>
+                        <input type="text" class="form-control" id="zip" type="tel" name="zip" required>
                     </div>
 
                     <div class="col-md-6">
-                        <label for="timeSelect" class="field-label">Select Time</label>
-                        <select class="form-select" id="timeSelect" name="Select Time">
+                        <label for="time" class="field-label" >Select Time</label>
+                        <select class="form-select" id="time" name="time" required>
                             <option Selected></option>
                             <option value="07:00 AM - 09:00 AM">07:00 AM - 09:00 AM</option>
                             <option value="02:00 PM - 04:00 PM">02:00 PM - 04:00 PM</option>
@@ -121,10 +119,10 @@
 
                     <!-----------select date div start ---------->
                     <div class="col-md-6" style="padding: 6px;">
-                        <label for="datepicker" class="form-label">Select a Date</label>
+                        <label for="datepicker" class="form-label" >Select a Date</label>
 
                         <div>
-                            <input type="date" id="myDate">
+                            <input type="date" id="myDate" name="date" required>
                             <script>
                                 $(document).ready(function () {
                                     $("#myDate").datepicker();
@@ -136,7 +134,7 @@
 
                     <div class="col-12">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <input class="form-check-input" type="checkbox" id="gridCheck" name="seg" value="True">
                             <label class="form-check-label" for="gridCheck">
                                 Is your waste segregated?
                             </label>
@@ -144,9 +142,9 @@
                     </div>
 
                     <div class="col-12">
-                        <button type="button" class="btn btn-outline-primary">Schedule</button>
+                        <button type="submit" class="btn btn-outline-primary">Schedule</button>
                     </div>
-                </form>
+                </form:form>
                 <!-- form ends here -->
 
 

@@ -1,3 +1,4 @@
+<%@page language="java" %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -40,11 +41,11 @@
     </div>
     
     <ul class="nav-list">
-      <a href="index.html">Home</a>
-      <a href="scheduleFinal.html" target="_blank">Schedule a pickup</a>
-      <a href="manage.html" target="_blank">Awareness</a>
-      <a href="about.html" target="_blank">About Us</a>
-      <a href="Community.html" target="_blank">Community</a>
+      <a href="index.jsp">Home</a>
+      <a href="scheduleFinal.jsp" target="_blank">Schedule a pickup</a>
+      <a href="manage.jsp" target="_blank">Awareness</a>
+      <a href="about.jsp" target="_blank">About Us</a>
+      <a href="Community.jsp" target="_blank">Community</a>
     </ul>
   </nav>
 
@@ -288,19 +289,19 @@
           <h2 class="title-font font-semibold text-black-800 tracking-wider text-sm mb-3">CATEGORIES</h2>
           <nav class="flex flex-wrap list-none -mb-1">
             <li class="lg:w-1/3 mb-1 w-1/2">
-              <a class="text-black-600 hover:text-black-800" href="index.html">Home</a>
+              <a class="text-black-600 hover:text-black-800" href="index.jsp">Home</a>
             </li>
             <li class="lg:w-1/3 mb-1 w-1/2">
-              <a class="text-black-600 hover:text-black-800" href="scheduleFinal.html">Schedule a Pickup</a>
+              <a class="text-black-600 hover:text-black-800" href="scheduleFinal.jsp">Schedule a Pickup</a>
             </li>
             <li class="lg:w-1/3 mb-1 w-1/2">
-              <a class="text-black-600 hover:text-black-800" href="manage.html">Awareness</a>
+              <a class="text-black-600 hover:text-black-800" href="manage.jsp">Awareness</a>
             </li>
             <li class="lg:w-1/3 mb-1 w-1/2">
-              <a class="text-black-600 hover:text-black-800" href="about.html">About us</a>
+              <a class="text-black-600 hover:text-black-800" href="about.jsp">About us</a>
             </li>
             <li class="lg:w-1/3 mb-1 w-1/2">
-              <a class="text-black-600 hover:text-black-800" href="Community.html">Community</a>
+              <a class="text-black-600 hover:text-black-800" href="Community.jsp">Community</a>
             </li>
           </nav>
         </div>
