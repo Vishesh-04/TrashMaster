@@ -1,12 +1,12 @@
 # TrashMaster
 
-![TrashMaster Logo](img/logo.png)
+![TrashMaster Logo](src/main/webapp/img/logo.png)
 
 TrashMaster is a Domestic Waste Management system that allows users to schedule visits from a trash truck for waste pickup. The platform enables efficient waste disposal, with truck drivers accessing the waste, determining the payment, and ensuring proper disposal practices.
 
 ## Features
-![TrashMaster](img/ss1.png)
-![TrashMaster](img/ss2.png)
+![TrashMaster](src/main/webapp/img/ss1.png)
+![TrashMaster](src/main/webapp/img/ss2.png)
 
 - **Scheduled Waste Pickup:** Users can schedule visits from a trash truck for convenient waste disposal.
 - **Driver Interaction:** Truck drivers can access the waste during pickups and determine the appropriate payment.
